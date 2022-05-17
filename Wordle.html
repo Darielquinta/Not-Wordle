@@ -17,26 +17,6 @@
 	  		font-family: "myFont";
   			src: url("karnakcondensed-normal-700.woff");
 		}
-/*
-		
-		#header-e1 {
-    float: left;
-    width:33%;
-    border: 1px solid black;
-}
-
-		#header-e2 {
-    float: left;
-    width:33%;
-    border: 1px solid black;
-}
-
-		#header-e3 {
-    float: left;
-    width:33%;
-    border: 1px solid black;
-}
-*/
 
     </style>
 	<center>
@@ -141,7 +121,7 @@
 		const randomNum = Math.trunc(Math.random() * 10) + 1;
 		
 		// An array of 32 five letter words.
-		const wordList = ["Grade", "Trust", "Block", "Sport", "Place", "Group", "Train", "Gleam", "Bring", "North", "Scour", "Reign", "Saint", "Mouse", "Verbs", "Chain", "Super", "Paint", "Rocks", "Trove", "World", "Weary", "Tangy", "Story", "Years", "Blunt", "Gears", "Point", "Bated", "Cower", "Mouth", "House"];
+		const wordList = ["Grade", "Trust", "Block", "Sport", "Place", "Group", "Train", "Gleam", "Bring", "North", "Scour", "Reign", "Saint", "Mouse", "Verbs", "Chain", "Super", "Paint", "Rocks", "Trove", "World", "Weary", "Tangy", "Story", "Years", "Blunt", "Gears", "Point", "Bated", "Cower", "Mouth", "House", "Truth", "Scour", "Heart", "Drone"];
 		
 		// Retrieve the word for the day of the month. (i.e. March 12th = 12th word)
 		const word = wordList[dayOfMonth];
@@ -159,6 +139,7 @@
 				document.body.style.backgroundColor = '#121212';
 				title.color = '#FFFFFF';
 			}
+
 	
 			// What will run when the first button is clicked. 
 			function submitClick() {
@@ -191,6 +172,7 @@
 					fifthText2.disabled = false;
 				}
 				
+				
 				// First row
 				switch (wordLetters[0]) {
 					// In case the first letter in the word is equal to the user input in the first text box, set the text box's background color to green and disable it. Then, activate the disableButton1() function.
@@ -198,39 +180,39 @@
 						firstText.style.backgroundColor = 'green';
 						firstText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					// In case the first letter in the word is equal to the user input in the second text box (and any of the following text boxes, as seen below), set the text box's background color to orange and disable it. Then, activate the disableButton1() function.
 					case secondText.value:  
 						secondText.style.backgroundColor = 'orange';						
 						secondText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText.value:  
 						thirdText.style.backgroundColor = 'orange';
 						thirdText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText.value:  
 						fourthText.style.backgroundColor = 'orange';
 						fourthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText.value:  
 						fifthText.style.backgroundColor = 'orange';
 						fifthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					// In case the first letter in the word does not equal to any of the user input entered in the text boxes, set the text box's background color to red and disable it. Then, activate the disableButton1() function.
 					default: 
 						firstText.style.backgroundColor = 'red';
 						firstText.disabled = true;						
 						disableButton1();
-						break;
+						  
 						
 				}
 				// Repeat all of the above actions, but with the second letter in the word (and so on).
@@ -239,37 +221,37 @@
 						secondText.style.backgroundColor = 'green';
 						secondText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText.value:  
 						firstText.style.backgroundColor = 'orange';
 						firstText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText.value:  
 						thirdText.style.backgroundColor = 'orange';
 						thirdText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText.value:  
 						fourthText.style.backgroundColor = 'orange';
 						fourthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText.value:  
 						fifthText.style.backgroundColor = 'orange';
 						fifthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						secondText.style.backgroundColor = 'red';						
 						secondText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					}
 					
@@ -278,37 +260,37 @@
 						thirdText.style.backgroundColor = 'green';
 						thirdText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText.value:  
 						firstText.style.backgroundColor = 'orange';
 						firstText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText.value:  
 						secondText.style.backgroundColor = 'orange';
 						secondText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText.value:  
 						fourthText.style.backgroundColor = 'orange';
 						fourthText.disabled = true;
 						disableButton1();
-						break;
+						  
 					
 					case fifthText.value:  
 						fifthText.style.backgroundColor = 'orange';
 						fifthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						thirdText.style.backgroundColor = 'red';						
 						thirdText.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 								
 				switch (wordLetters[3]) {							
@@ -316,37 +298,37 @@
 						fourthText.style.backgroundColor = 'green';
 						fourthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText.value:  
 						firstText.style.backgroundColor = 'orange';
 						firstText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText.value:  
 						secondText.style.backgroundColor = 'orange';
 						secondText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText.value:  
 						thirdText.style.backgroundColor = 'orange';
 						thirdText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText.value:  
 						fifthText.style.backgroundColor = 'orange';
 						fifthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fourthText.style.backgroundColor = 'red';						
 						fourthText.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 					
 				switch (wordLetters[4]) {			
@@ -354,37 +336,37 @@
 						fifthText.style.backgroundColor = 'green';
 						fifthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText.value:  
 						firstText.style.backgroundColor = 'orange';
 						firstText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText.value:  
 						secondText.style.backgroundColor = 'orange';
 						secondText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText.value:  
 						thirdText.style.backgroundColor = 'orange';
 						thirdText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText.value:  
 						fourthText.style.backgroundColor = 'orange';
 						fourthText.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fifthText.style.backgroundColor = 'red';						
 						fifthText.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 			}
 			// When the second submit button is clicked, activate this function. Repeat all of the code above, but with the second row.
@@ -415,38 +397,38 @@
 						firstText2.style.backgroundColor = 'green';
 						firstText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText2.value:  
 						secondText2.style.backgroundColor = 'orange';						
 						secondText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText2.value:  
 						thirdText2.style.backgroundColor = 'orange';
 						thirdText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText2.value:  
 						fourthText2.style.backgroundColor = 'orange';
 						fourthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText2.value:  
 						fifthText2.style.backgroundColor = 'orange';
 						fifthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 						
 					default: 
 						firstText2.style.backgroundColor = 'red';
 						firstText2.disabled = true;						
 						disableButton1();
-						break;
+						  
 						
 				}
 //				
@@ -455,37 +437,37 @@
 						secondText2.style.backgroundColor = 'green';
 						secondText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText2.value:  
 						firstText2.style.backgroundColor = 'orange';
 						firstText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText2.value:  
 						thirdText2.style.backgroundColor = 'orange';
 						thirdText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText2.value:  
 						fourthText2.style.backgroundColor = 'orange';
 						fourthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText2.value:  
 						fifthText2.style.backgroundColor = 'orange';
 						fifthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						secondText2.style.backgroundColor = 'red';						
 						secondText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					}
 //					
@@ -494,37 +476,37 @@
 						thirdText2.style.backgroundColor = 'green';
 						thirdText2.disabled = true;
 						disableButton1();
-						break;
+						 
 						
 					case firstText2.value:  
 						firstText2.style.backgroundColor = 'orange';
 						firstText2.disabled = true;
 						disableButton1();
-						break;
+						 
 						
 					case secondText2.value:  
 						secondText2.style.backgroundColor = 'orange';
 						secondText2.disabled = true;
 						disableButton1();
-						break;
+						 
 						
 					case fourthText2.value:  
 						fourthText2.style.backgroundColor = 'orange';
 						fourthText2.disabled = true;
 						disableButton1();
-						break;
+						 
 					
 					case fifthText2.value:  
 						fifthText2.style.backgroundColor = 'orange';
 						fifthText2.disabled = true;
 						disableButton1();
-						break;
+						 
 						
 					default: 
 						thirdText2.style.backgroundColor = 'red';						
 						thirdText2.disabled = true;
 						disableButton1();
-						break;
+						 
 					}
 //								
 				switch (wordLetters[3]) {
@@ -532,37 +514,37 @@
 						fourthText2.style.backgroundColor = 'green';
 						fourthText2.disabled = true;
 						disableButton1();
-						break;
+
 						
 					case firstText2.value:  
 						firstText2.style.backgroundColor = 'orange';
 						firstText2.disabled = true;
 						disableButton1();
-						break;
+
 						
 					case secondText2.value:  
 						secondText2.style.backgroundColor = 'orange';
 						secondText2.disabled = true;
 						disableButton1();
-						break;
+
 						
 					case thirdText2.value:  
 						thirdText2.style.backgroundColor = 'orange';
 						thirdText2.disabled = true;
 						disableButton1();
-						break;
+
 						
 					case fifthText2.value:  
 						fifthText2.style.backgroundColor = 'orange';
 						fifthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fourthText2.style.backgroundColor = 'red';						
 						fourthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 					
 				switch (wordLetters[4]) {
@@ -571,37 +553,37 @@
 						fifthText2.style.backgroundColor = 'green';
 						fifthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText2.value:  
 						firstText2.style.backgroundColor = 'orange';
 						firstText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText2.value:  
 						secondText2.style.backgroundColor = 'orange';
 						secondText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText2.value:  
 						thirdText2.style.backgroundColor = 'orange';
 						thirdText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText2.value:  
 						fourthText2.style.backgroundColor = 'orange';
 						fourthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fifthText2.style.backgroundColor = 'red';						
 						fifthText2.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 			}
 		  
@@ -624,7 +606,6 @@
 				const disableButton1 = function() {	
 												   	
 					submit3.disabled = true;  
-					
 					firstText4.disabled = false;
 					secondText4.disabled = false;
 					thirdText4.disabled = false;
@@ -639,38 +620,38 @@
 						firstText3.style.backgroundColor = 'green';
 						firstText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText3.value:  
 						secondText3.style.backgroundColor = 'orange';						
 						secondText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText3.value:  
 						thirdText3.style.backgroundColor = 'orange';
 						thirdText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText3.value:  
 						fourthText3.style.backgroundColor = 'orange';
 						fourthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText3.value:  
 						fifthText3.style.backgroundColor = 'orange';
 						fifthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 						
 					default: 
 						firstText3.style.backgroundColor = 'red';
 						firstText3.disabled = true;						
 						disableButton1();
-						break;
+						  
 						
 				}
 //				
@@ -679,37 +660,37 @@
 						secondText3.style.backgroundColor = 'green';
 						secondText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText3.value:  
 						firstText3.style.backgroundColor = 'orange';
 						firstText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText3.value:  
 						thirdText3.style.backgroundColor = 'orange';
 						thirdText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText3.value:  
 						fourthText3.style.backgroundColor = 'orange';
 						fourthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText3.value:  
 						fifthText3.style.backgroundColor = 'orange';
 						fifthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						secondText3.style.backgroundColor = 'red';						
 						secondText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					}
 //					
@@ -718,37 +699,37 @@
 						thirdText3.style.backgroundColor = 'green';
 						thirdText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText3.value:  
 						firstText3.style.backgroundColor = 'orange';
 						firstText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText3.value:  
 						secondText3.style.backgroundColor = 'orange';
 						secondText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText3.value:  
 						fourthText3.style.backgroundColor = 'orange';
 						fourthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 					
 					case fifthText3.value:  
 						fifthText3.style.backgroundColor = 'orange';
 						fifthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						thirdText3.style.backgroundColor = 'red';						
 						thirdText3.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 //								
 				switch (wordLetters[3]) {
@@ -756,37 +737,37 @@
 						fourthText3.style.backgroundColor = 'green';
 						fourthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText3.value:  
 						firstText3.style.backgroundColor = 'orange';
 						firstText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText3.value:  
 						secondText3.style.backgroundColor = 'orange';
 						secondText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText3.value:  
 						thirdText3.style.backgroundColor = 'orange';
 						thirdText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText3.value:  
 						fifthText3.style.backgroundColor = 'orange';
 						fifthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fourthText3.style.backgroundColor = 'red';						
 						fourthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 //					
 				switch (wordLetters[4]) {
@@ -795,37 +776,37 @@
 						fifthText3.style.backgroundColor = 'green';
 						fifthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText3.value:  
 						firstText3.style.backgroundColor = 'orange';
 						firstText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText3.value:  
 						secondText3.style.backgroundColor = 'orange';
 						secondText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText3.value:  
 						thirdText3.style.backgroundColor = 'orange';
 						thirdText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText3.value:  
 						fourthText3.style.backgroundColor = 'orange';
 						fourthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fifthText3.style.backgroundColor = 'red';						
 						fifthText3.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 			}
 		 
@@ -861,38 +842,38 @@
 						firstText4.style.backgroundColor = 'green';
 						firstText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText4.value:  
 						secondText4.style.backgroundColor = 'orange';						
 						secondText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText4.value:  
 						thirdText4.style.backgroundColor = 'orange';
 						thirdText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText4.value:  
 						fourthText4.style.backgroundColor = 'orange';
 						fourthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText4.value:  
 						fifthText4.style.backgroundColor = 'orange';
 						fifthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 						
 					default: 
 						firstText4.style.backgroundColor = 'red';
 						firstText4.disabled = true;						
 						disableButton1();
-						break;
+						  
 						
 				}
 //				
@@ -902,13 +883,13 @@
 						secondText4.style.backgroundColor = 'green';
 						secondText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText4.value:  
 						firstText4.style.backgroundColor = 'orange';
 						firstText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 						
@@ -916,25 +897,25 @@
 						thirdText4.style.backgroundColor = 'orange';
 						thirdText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText4.value:  
 						fourthText4.style.backgroundColor = 'orange';
 						fourthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText4.value:  
 						fifthText4.style.backgroundColor = 'orange';
 						fifthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						secondText4.style.backgroundColor = 'red';						
 						secondText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					}
 //					
@@ -943,19 +924,19 @@
 						thirdText4.style.backgroundColor = 'green';
 						thirdText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText4.value:  
 						firstText4.style.backgroundColor = 'orange';
 						firstText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText4.value:  
 						secondText4.style.backgroundColor = 'orange';
 						secondText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 						
@@ -963,19 +944,19 @@
 						fourthText4.style.backgroundColor = 'orange';
 						fourthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 					
 					case fifthText4.value:  
 						fifthText4.style.backgroundColor = 'orange';
 						fifthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						thirdText4.style.backgroundColor = 'red';						
 						thirdText4.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 //								
 				switch (wordLetters[3]) {
@@ -983,25 +964,25 @@
 						fourthText4.style.backgroundColor = 'green';
 						fourthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText4.value:  
 						firstText4.style.backgroundColor = 'orange';
 						firstText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText4.value:  
 						secondText4.style.backgroundColor = 'orange';
 						secondText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText4.value:  
 						thirdText4.style.backgroundColor = 'orange';
 						thirdText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 						
@@ -1009,13 +990,13 @@
 						fifthText4.style.backgroundColor = 'orange';
 						fifthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fourthText4.style.backgroundColor = 'red';						
 						fourthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 //					
 				switch (wordLetters[4]) {
@@ -1024,31 +1005,31 @@
 						fifthText4.style.backgroundColor = 'green';
 						fifthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 										
 					case firstText4.value:  
 						firstText4.style.backgroundColor = 'orange';
 						firstText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText4.value:  
 						secondText4.style.backgroundColor = 'orange';
 						secondText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText4.value:  
 						thirdText4.style.backgroundColor = 'orange';
 						thirdText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText4.value:  
 						fourthText4.style.backgroundColor = 'orange';
 						fourthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 						
@@ -1056,7 +1037,7 @@
 						fifthText4.style.backgroundColor = 'red';						
 						fifthText4.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 }
 			
@@ -1093,37 +1074,37 @@
 						firstText5.style.backgroundColor = 'green';
 						firstText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText5.value:  
 						secondText5.style.backgroundColor = 'orange';						
 						secondText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText5.value:  
 						thirdText5.style.backgroundColor = 'orange';
 						thirdText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText5.value:  
 						fourthText5.style.backgroundColor = 'orange';
 						fourthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText5.value:  
 						fifthText5.style.backgroundColor = 'orange';
 						fifthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						firstText5.style.backgroundColor = 'red';
 						firstText5.disabled = true;						
 						disableButton1();
-						break;
+						  
 						
 				}
 				
@@ -1132,37 +1113,37 @@
 						secondText5.style.backgroundColor = 'green';
 						secondText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText5.value:  
 						firstText5.style.backgroundColor = 'orange';
 						firstText5.disabled = true;
 						disableButton1();
-						break;
+						  
 	
 					case thirdText5.value:  
 						thirdText5.style.backgroundColor = 'orange';
 						thirdText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText5.value:  
 						fourthText5.style.backgroundColor = 'orange';
 						fourthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText5.value:  
 						fifthText5.style.backgroundColor = 'orange';
 						fifthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						secondText5.style.backgroundColor = 'red';						
 						secondText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					}
 					
@@ -1171,38 +1152,38 @@
 						thirdText5.style.backgroundColor = 'green';
 						thirdText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText5.value:  
 						firstText5.style.backgroundColor = 'orange';
 						firstText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText5.value:  
 						secondText5.style.backgroundColor = 'orange';
 						secondText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 					case fourthText5.value:  
 						fourthText5.style.backgroundColor = 'orange';
 						fourthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 					
 					case fifthText5.value:  
 						fifthText5.style.backgroundColor = 'orange';
 						fifthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						thirdText5.style.backgroundColor = 'red';						
 						thirdText5.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 								
 				switch (wordLetters[3]) {
@@ -1210,25 +1191,25 @@
 						fourthText5.style.backgroundColor = 'green';
 						fourthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText5.value:  
 						firstText5.style.backgroundColor = 'orange';
 						firstText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText5.value:  
 						secondText5.style.backgroundColor = 'orange';
 						secondText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText5.value:  
 						thirdText5.style.backgroundColor = 'orange';
 						thirdText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 						
@@ -1236,13 +1217,13 @@
 						fifthText5.style.backgroundColor = 'orange';
 						fifthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fourthText5.style.backgroundColor = 'red';						
 						fourthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 					
 				switch (wordLetters[4]) {
@@ -1251,37 +1232,37 @@
 						fifthText5.style.backgroundColor = 'green';
 						fifthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 										
 					case firstText5.value:  
 						firstText5.style.backgroundColor = 'orange';
 						firstText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText5.value:  
 						secondText5.style.backgroundColor = 'orange';
 						secondText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText5.value:  
 						thirdText5.style.backgroundColor = 'orange';
 						thirdText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText5.value:  
 						fourthText5.style.backgroundColor = 'orange';
 						fourthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fifthText5.style.backgroundColor = 'red';						
 						fifthText5.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 }
 			
@@ -1308,38 +1289,38 @@
 						firstText6.style.backgroundColor = 'green';
 						firstText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText6.value:  
 						secondText6.style.backgroundColor = 'orange';						
 						secondText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText6.value:  
 						thirdText6.style.backgroundColor = 'orange';
 						thirdText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText6.value:  
 						fourthText6.style.backgroundColor = 'orange';
 						fourthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText6.value:  
 						fifthText6.style.backgroundColor = 'orange';
 						fifthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 						
 					default: 
 						firstText6.style.backgroundColor = 'red';
 						firstText6.disabled = true;						
 						disableButton1();
-						break;
+						  
 						
 				}
 				
@@ -1348,39 +1329,37 @@
 						secondText6.style.backgroundColor = 'green';
 						secondText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText6.value:  
 						firstText6.style.backgroundColor = 'orange';
 						firstText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 					case thirdText6.value:  
 						thirdText6.style.backgroundColor = 'orange';
 						thirdText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText6.value:  
 						fourthText6.style.backgroundColor = 'orange';
 						fourthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fifthText6.value:  
 						fifthText6.style.backgroundColor = 'orange';
 						fifthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						secondText6.style.backgroundColor = 'red';						
 						secondText6.disabled = true;
-						disableButton1();
-						break;
-						
+						disableButton1();					
 					}
 				
 				switch (wordLetters[2]) {
@@ -1388,39 +1367,35 @@
 						thirdText6.style.backgroundColor = 'green';
 						thirdText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText6.value:  
 						firstText6.style.backgroundColor = 'orange';
 						firstText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText6.value:  
 						secondText6.style.backgroundColor = 'orange';
 						secondText6.disabled = true;
 						disableButton1();
-						break;
-						
-					
 						
 					case fourthText6.value:  
 						fourthText6.style.backgroundColor = 'orange';
 						fourthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 					
 					case fifthText6.value:  
 						fifthText6.style.backgroundColor = 'orange';
 						fifthText6.disabled = true;
 						disableButton1();
-						break;
-						
+						  
 					default: 
 						thirdText6.style.backgroundColor = 'red';						
 						thirdText6.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 								
 				switch (wordLetters[3]) {
@@ -1428,38 +1403,38 @@
 						fourthText6.style.backgroundColor = 'green';
 						fourthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText6.value:  
 						firstText6.style.backgroundColor = 'orange';
 						firstText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText6.value:  
 						secondText6.style.backgroundColor = 'orange';
 						secondText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText6.value:  
 						thirdText6.style.backgroundColor = 'orange';
 						thirdText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					
 					case fifthText6.value:  
 						fifthText6.style.backgroundColor = 'orange';
 						fifthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fourthText6.style.backgroundColor = 'red';						
 						fourthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 				
 				switch (wordLetters[4]) {
@@ -1468,50 +1443,39 @@
 						fifthText6.style.backgroundColor = 'green';
 						fifthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case firstText6.value:  
 						firstText6.style.backgroundColor = 'orange';
 						firstText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case secondText6.value:  
 						secondText6.style.backgroundColor = 'orange';
 						secondText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case thirdText6.value:  
 						thirdText6.style.backgroundColor = 'orange';
 						thirdText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					case fourthText6.value:  
 						fourthText6.style.backgroundColor = 'orange';
 						fourthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 						
 					default: 
 						fifthText6.style.backgroundColor = 'red';						
 						fifthText6.disabled = true;
 						disableButton1();
-						break;
+						  
 					}
 }
-	// document.write("<center> <label id = 'correct-answer'> The correct answer is: " + word + "</label> </center>");
-	
-	// const fifthText6 = document.getElementById('fifth6');
-	// const answerLabel = document.getElementById('correct-answer');
-	
-	// answerLabel.disabled = true;
-	
-	// if (fifthText6.disabled) {
-	// 	answerLabel.disabled = true;
-	// }
-		  </script>
-	
+	</script>
 	</body></center>
-</html>
+	</html>
