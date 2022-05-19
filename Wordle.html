@@ -23,7 +23,7 @@
       <!-- Creates a header with the title. -->
       <header>
         <font id="title" size="100" style="font-family: myFont"> Wordle </font>
-        <button onClick="changeBackground();">Dark Mode</button>
+        <button onClick="changeBackground();"><img src = "/moon.png" HEIGHT = '50'></button>
       </header>
 
       <!-- The first row of text boxes and the submit button. Once the text box is filled, the cursor goes to the next one. -->
@@ -633,7 +633,7 @@
             case firstText.value:
               firstText.style.backgroundColor = "green";
               firstText.disabled = true;
-              disableButton1();
+              disableButton1(); 
               break;
 
             // In case the first letter in the word is equal to the user input in the second text box (and any of the following text boxes, as seen below), set the text box's background color to orange and disable it. Then, activate the disableButton1() function.
