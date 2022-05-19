@@ -628,14 +628,27 @@
             // fifthText.disabled = true;
           };
           
-          // const disableNotFirst = function() {
-          //   firstText.disabled = true;
-          //   secondText.disabled = true;
-          //   thirdText.disabled = true;
-          //   fourthText.disabled = true;
-          //   fifthText.disabled = true;
+          const disableNotFirst = function() {
+            firstText.disabled = true;
+            secondText.disabled = true;
+            thirdText.disabled = true;
+            fourthText.disabled = true;
+            fifthText.disabled = true;
 
-          // }
+          }
+
+          const secondTextNear = function() {
+              secondText.style.backgroundColor = "orange";
+              secondText.disabled = true;
+              disableButton1();
+          }
+
+          const secondTextWrong = function() {
+              secondText.style.backgroundColor = "red";
+              secondText.disabled = true;
+              disableButton1();
+
+          }
 
           // First row
           switch (wordLetters[0]) { // 1 
@@ -648,10 +661,7 @@
 
             // In case the first letter in the word is equal to the user input in the second text box (and any of the following text boxes, as seen below), set the text box's background color to orange and disable it. Then, activate the disableButton1() function.
             case secondText.value:
-              secondText.style.backgroundColor = "orange";
-              secondText.disabled = true;
-              disableNotFirst();
-              disableButton1();
+              secondTextNear();
               break;
 
             case thirdText.value:
@@ -712,9 +722,7 @@
               break;
 
             default:
-              secondText.style.backgroundColor = "red";
-              secondText.disabled = true;
-              disableButton1();
+              secondTextWrong();
               break;
           }
 
