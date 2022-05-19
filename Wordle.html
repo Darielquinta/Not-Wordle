@@ -625,10 +625,20 @@
             thirdText2.disabled = false;
             fourthText2.disabled = false;
             fifthText2.disabled = false;
+            // fifthText.disabled = true;
           };
+          
+          // const disableNotFirst = function() {
+          //   firstText.disabled = true;
+          //   secondText.disabled = true;
+          //   thirdText.disabled = true;
+          //   fourthText.disabled = true;
+          //   fifthText.disabled = true;
+
+          // }
 
           // First row
-          switch (wordLetters[0]) {
+          switch (wordLetters[0]) { // 1 
             // In case the first letter in the word is equal to the user input in the first text box, set the text box's background color to green and disable it. Then, activate the disableButton1() function.
             case firstText.value:
               firstText.style.backgroundColor = "green";
@@ -640,6 +650,7 @@
             case secondText.value:
               secondText.style.backgroundColor = "orange";
               secondText.disabled = true;
+              disableNotFirst();
               disableButton1();
               break;
 
@@ -669,7 +680,7 @@
               break;
           }
           // Repeat all of the above actions, but with the second letter in the word (and so on).
-          switch (wordLetters[1]) {
+          switch (wordLetters[1]) { // 2
             case secondText.value:
               secondText.style.backgroundColor = "green";
               secondText.disabled = true;
@@ -707,7 +718,7 @@
               break;
           }
 
-          switch (wordLetters[2]) {
+          switch (wordLetters[2]) { // 3
             case thirdText.value:
               thirdText.style.backgroundColor = "green";
               thirdText.disabled = true;
@@ -745,7 +756,7 @@
               break;
           }
 
-          switch (wordLetters[3]) {
+          switch (wordLetters[3]) { // 4
             case fourthText.value:
               fourthText.style.backgroundColor = "green";
               fourthText.disabled = true;
@@ -756,7 +767,7 @@
               firstText.style.backgroundColor = "orange";
               firstText.disabled = true;
               disableButton1();
-              break;
+              break; 
 
             case secondText.value:
               secondText.style.backgroundColor = "orange";
@@ -783,7 +794,7 @@
               break;
           }
 
-          switch (wordLetters[4]) {
+          switch (wordLetters[4]) { // 5
             case fifthText.value:
               fifthText.style.backgroundColor = "green";
               fifthText.disabled = true;
@@ -800,17 +811,24 @@
               secondText.style.backgroundColor = "orange";
               secondText.disabled = true;
               disableButton1();
+              fifthText.style.backgroundColor = "red";
+              fifthText.disabled = true;
+              disableOtherBoxes();
               break;
 
-            case thirdText.value:
+            case thirdText.value: 
               thirdText.style.backgroundColor = "orange";
               thirdText.disabled = true;
+              fifthText.style.backgroundColor = "red";
+              fifthText.disabled = true;
               disableButton1();
               break;
 
             case fourthText.value:
               fourthText.style.backgroundColor = "orange";
               fourthText.disabled = true;
+              fifthText.style.backgroundColor = "red";
+              fifthText.disabled = true;
               disableButton1();
               break;
 
